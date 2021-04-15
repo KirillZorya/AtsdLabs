@@ -25,5 +25,12 @@ namespace Lab1
         {
             return count;
         }
+
+        public void Clear()
+        {
+            head = null;
+            tail = null;
+            count = 0;
+        }
     }
 }
