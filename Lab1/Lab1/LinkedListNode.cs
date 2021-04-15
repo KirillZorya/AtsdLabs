@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    class LinkedListNode
+    class LinkedListNode<T>
     {
+        public T Value;
+        public LinkedListNode<T> Next;
+
+        public LinkedListNode(T value, LinkedListNode<T> next=null)
+        {
+            Value = value;
+            Next = next;
+        } 
     }
 }
