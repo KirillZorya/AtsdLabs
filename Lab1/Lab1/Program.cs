@@ -11,7 +11,12 @@ namespace Lab1
             numbers.Add(5);
             numbers.Add(2);
             numbers.Add(1);
+            numbers.Add(8);
+            numbers.Add(-2);
             numbers.Delete(numbers.Find(5));
+            Console.WriteLine($"List length: {numbers.Length()}");
+            numbers.Print(numbers);
+            numbers.Clear();
             numbers.Print(numbers);
         }
     }
