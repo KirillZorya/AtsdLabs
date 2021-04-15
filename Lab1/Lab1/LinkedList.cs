@@ -15,5 +15,10 @@ namespace Lab1
                 return head; 
             }
         }
+
+        public bool Empty()
+        {
+            return count == 0;
+        }
     }
 }
