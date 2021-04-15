@@ -11,6 +11,7 @@ namespace Lab1
             numbers.Add(5);
             numbers.Add(2);
             numbers.Add(1);
+            numbers.Delete(numbers.Find(5));
             numbers.Print(numbers);
         }
     }
