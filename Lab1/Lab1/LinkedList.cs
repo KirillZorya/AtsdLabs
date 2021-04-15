@@ -32,5 +32,29 @@ namespace Lab1
             tail = null;
             count = 0;
         }
+
+        public void Add(T value)
+        {
+            LinkedListNode<T> previous = null;
+            LinkedListNode<T> current = head;
+
+            while(current != null && current.Value.CompareTo(value) == -1)
+            {
+                previous = current;
+                current = current.Next;
+            }
+            LinkedListNode<T> newNode = new LinkedListNode<T>(value);
+            if(previous == null)
+            {
+                newNode.Next = head;
+                head = newNode;
+            }
+            else
+            {
+                previous.Next = newNode;
+                newNode.Next = current;
+            }
+            count++;
+        }
     }
 }
