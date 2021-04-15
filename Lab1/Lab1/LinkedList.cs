@@ -56,5 +56,15 @@ namespace Lab1
             }
             count++;
         }
+        public void Print(LinkedList<T> list)
+        {
+            var node = list.First;
+            while(node != null)
+            {
+                Console.Write(node.Value + " ");
+                node = node.Next;
+            }
+            Console.WriteLine();
+        }
     }
 }
