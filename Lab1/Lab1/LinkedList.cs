@@ -56,6 +56,22 @@ namespace Lab1
             }
             count++;
         }
+
+        public void Delete(LinkedListNode<T> node)
+        {
+            LinkedListNode<T> current = head;
+            LinkedListNode<T> previous = null;
+
+            if(node == null)
+            {
+                Console.WriteLine("This element wasn`t found at the list");
+                return;
+            }
+            while(current != null)
+            {
+
+            }
+        }
         public void Print(LinkedList<T> list)
         {
             var node = list.First;
