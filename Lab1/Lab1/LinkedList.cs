@@ -20,5 +20,10 @@ namespace Lab1
         {
             return count == 0;
         }
+
+        public int Length()
+        {
+            return count;
+        }
     }
 }
