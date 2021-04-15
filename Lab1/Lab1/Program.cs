@@ -6,7 +6,11 @@ namespace Lab1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            LinkedList<int> numbers = new LinkedList<int>();
+            Console.WriteLine(numbers.Empty());
+            numbers.Add(5);
+            numbers.Add(2);
+            numbers.Add(1);
         }
     }
 }
