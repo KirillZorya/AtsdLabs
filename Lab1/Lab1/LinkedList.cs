@@ -69,7 +69,29 @@ namespace Lab1
             }
             while(current != null)
             {
-
+                if (current.Value.Equals(node.Value))
+                {
+                    if(previous != null)
+                    {
+                        previous.Next = current.Next;
+                        if (current.Next == null)
+                        {
+                            tail = previous;
+                        }
+                    }
+                    else
+                    {
+                        head = head.Next;
+                        if(head == null)
+                        {
+                            tail = null;
+                            break;
+                        }
+                    }
+                    count--;
+                }
+                previous = current;
+                current = current.Next;
             }
         }
         public void Print(LinkedList<T> list)
