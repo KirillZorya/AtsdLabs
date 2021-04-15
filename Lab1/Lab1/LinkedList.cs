@@ -94,6 +94,19 @@ namespace Lab1
                 current = current.Next;
             }
         }
+        public LinkedListNode<T> Find(T value)
+        {
+            LinkedListNode<T> temp = head;
+            while(temp != null)
+            {
+                if(temp.Value.CompareTo(value) == 0)
+                {
+                    return temp;
+                }
+                temp = temp.Next;
+            }
+            return null;
+        }
         public void Print(LinkedList<T> list)
         {
             var node = list.First;
